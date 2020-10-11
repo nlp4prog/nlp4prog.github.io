@@ -6,7 +6,6 @@ nav: true
 
 # Organizers
 
-<!-- {% include figure.html file="organizers.png" alt="organizers" width="90%" %} -->
 + [Ahmed Hassan Awadallah](https://www.microsoft.com/en-us/research/people/hassanam/) (Microsoft Research)
 + [Yu Su](http://ysu1989.github.io/) (OSU/Microsoft Semantic Machines)
 + [Huan Sun](http://web.cse.ohio-state.edu/~sun.397/) (OSU)

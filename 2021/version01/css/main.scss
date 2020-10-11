@@ -40,10 +40,10 @@ $on-laptop:        800px !default;
 }
 
 // Import partials.
-@import
-  "2021/version01/sass/base",
-  "2021/version01/sass/layout"
-;
+// @import
+//   "base",
+//   "layout"
+// ;
 
 /* Container holding the image and the text */
 .container {

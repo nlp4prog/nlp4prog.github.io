@@ -40,10 +40,10 @@ $on-laptop:        800px !default;
 }
 
 // Import partials.
-// @import
+@import
 //   "base",
-//   "layout"
-// ;
+  "layout"
+;
 
 /* Container holding the image and the text */
 .container {

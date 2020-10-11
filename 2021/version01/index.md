@@ -51,8 +51,6 @@ All deadlines are 11:59 PM Pacific time.
 <br>
 
 # Invited Speakers
-{% include figure.html file="speakers.png" alt="invited speakers" width="110%" %}
-
 Details about the speakers and talks can be found [here](http://nli-acl2020.github.io/3-speaker.html).
 
 <br>
@@ -71,8 +69,6 @@ This workshop aims to bring together researchers and practitioners from differen
 <br>
 
 # Organizers
-{% include figure.html file="organizers.png" alt="organizers" width="100%" %}
-
 The workshop is organized by [Ahmed Hassan Awadallah](https://www.microsoft.com/en-us/research/people/hassanam/) (Microsoft Research), [Yu Su](http://ysu1989.github.io/) (OSU/Microsoft Semantic Machines)，[Huan Sun](http://web.cse.ohio-state.edu/~sun.397/) (OSU), and [Scott Wen-tau Yih](http://scottyih.org/) (Facebook AI Research).
 
 For any questions, please email [nliacl2020@gmail.com](mailto:nliacl2020@gmail.com )

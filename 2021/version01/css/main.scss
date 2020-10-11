@@ -41,8 +41,8 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
-  "../_sass/_base",
-  "../_sass/_layout"
+  "sass/base",
+  "sass/layout"
 ;
 
 /* Container holding the image and the text */

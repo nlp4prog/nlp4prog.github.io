@@ -52,7 +52,6 @@ All deadlines are 11:59 PM Pacific time.
 <br>
 
 # Invited Speakers
-{% include figure.html file="speakers.png" alt="invited speakers" width="110%" %}
 
 Details about the speakers and talks can be found [here](http://nli-acl2020.github.io/3-speaker.html).
 

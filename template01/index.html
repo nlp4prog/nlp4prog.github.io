@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<title>NLP4Prog 2021</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<body id="myPage">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="#introduction" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Introduction</a>
+  <a href="#callforpapers" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Call For Papers</a>
+  <a href="#importantdates" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Important Dates</a>
+  <a href="#keynotespeakers" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Keynote Speakers</a>
+  <a href="#acceptedpapers" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Accepted Papers</a>
+  <a href="#schedule" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Schedule</a>
+  <a href="#pc" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Program Committee</a>
+  <a href="#organizers" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Organizers</a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#introduction" class="w3-bar-item w3-button">Introduction</a>
+    <a href="#callforpapers" class="w3-bar-item w3-button">Call For Papers</a>
+    <a href="#importantdates" class="w3-bar-item w3-button">Important Dates</a>
+    <a href="#keynotespeakers" class="w3-bar-item w3-button">Keynote Speakers</a>
+    <a href="#acceptedpapers" class="w3-bar-item w3-button">Accepted Papers</a>
+    <a href="#schedule" class="w3-bar-item w3-button">Schedule</a>
+    <a href="#pc" class="w3-bar-item w3-button">Program Committee</a>
+    <a href="#organizers" class="w3-bar-item w3-button">Organizers</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="images/seattle.jpg" style="width:100%;min-height:200px;max-height:550px;">
+  <div class="w3-container w3-display-topmiddle w3-margin-top">
+    <h3>
+      <p align="center">
+        <b>
+          <font color="black">FIRST WORKSHOP ON  Natural Language Processing for Programming </font>
+        </b>
+      </p>
+    </h3>
+    <h5>
+      <p align="center">
+        <font color="black">Held in conjunction with TBD 2021 <br/> MMMM DDth, CITY, STATE</font>
+      </p>
+    </h5>
+  </div>
+</div>
+
+<!-- Introduction -->
+<div class="w3-row-padding w3-padding-64 w3-center" id="introduction">
+
+<div class="w3-content">
+<h2>Introduction</h2>
+<p align="justify">The proliferation of programming-related platforms such as GitHub and Stack Overflow has led to large amounts of rich, open-source data consisting of programs associated with natural language, such as natural language questions and answers with code snippets, open-source repositories with natural language comments, and communications between software developers. At the same time, deep learning based techniques have shown promising performance for modeling both natural language and computer programs. Driven by these revolutions on data and models, recent years have witnessed a major resurgence of using NLP techniques to assist programming (NLP4Prog).
+<br/>
+<br/>
+As promising as the current developments are,  there are still many challenges remaining. This workshop aims to bring related communities (e.g., NLP, Software Engineering, Programming Language, Human-Machine Interaction, Robotics) together to review the recent advances related to NLP4Prog and discuss the remaining challenges and what to expect in the short- and long-term future. While there are similar workshops such as  NLP-SEA and NLPaSE held recently, most of them are in conjunction with software engineering venues; to the best of our knowledge, this is the first workshop focusing on NLP for programming and to be held in NLP venues.
+<br/>
+<br/> 
+</p>
+</div>
+
+<!-- Call For Papers -->
+<div class="w3-row-padding w3-padding-64 w3-center w3-theme-l1" id="callforpapers">
+
+<div class="w3-content">
+<h2>Call For Papers</h2>
+
+<p align="justify">This workshop aims to bring together researchers from different disciplines related to using natural language processing to assist programming. As such, the workshop welcomes and covers a wide range of topics, including (non-exclusively):
+ 
+<ul style="text-align: justify;">
+<li>  
+<b>(Interactive) program synthesis, editing and autocompletion based on natural language.</b> Natural language can be used to specify a user's intent for a program, with applications ranging from database querying in SQL, regex synthesis, plot generation, and more. How do we interpret this language and synthesize the right program in a domain-specific language while respecting constraints such as well-formedness, correctness, and efficiency? And how can we allow a user to understand what the program is doing and interact with the system to improve it?
+</li>
+
+<li>
+<b>Understanding natural language descriptions of source code.</b> Language is used in many ways to annotate/describe source code: comments in code, documentation, specifications, posts on Stack Overflow, and more. This language is grounded in the code that it relates to, describing or relying on properties of that code's syntax or semantics.
+</li>
+
+<li>
+<b>Annotating programs in natural language.</b> Developers use natural language elements to document various aspects of code, including high-level overview of functionality, use cases, and pre/post-conditions. These elements are crucial for code comprehension and serve as key communication mechanisms among developers. How do we generate and maintain coherent, informative, and useful natural language elements, especially in an era where software evolves constantly?
+</li>
+
+<li>
+<b>Programming for NLP.</b> Program structure is a fundamental part of some problems in NLP. In information extraction, data programming or the use of labeling functions allows easy scaling of annotation. In question answering, tasks involving tables, multi-step reasoning, or numerical reasoning are often grounded in programs. How can the language involved in these cases give rise to program structure, and what is special about these programs that execute on natural language?
+</li>
+
+<li>
+<b>Code retrieval, editing and completion based on natural language.</b> TBD
+</li> 
+
+<li>
+<b>Applying NLP to debug and repair existing programs.</b>Much of the process of assessing a program, towards debugging, repairing or refactoring, is done using NL messages and logs. Can we use NLU technologies to aid program evaluation and assessment? Specifically, can we use NLP to parse diagnostic messages and predict certain bugs or flaws? Can we mine long natural language message logs to track and identify certain logical processes? Can we use Natural Language technology to detect (in)appropriate links between variables according to their names' significant meanings?  Here we are intersted in any way in which NL output helps the programming and software evaluation process.
+</li>
+
+<li>
+<b>Pre-trained language models for programming.</b> Developing and understanding large-scale language models pre-trained on code repositories or jointly with text and code, to autocomplete, synthesize, repair programs, and more.</li></ul></p>
+ 
+<h3>Submission Guidelines</h3> 
+<p align="justify">
+We welcome two types of papers: regular workshop papers and cross-submissions. Only regular workshop papers will be included in the workshop proceedings. All submissions should be in PDF format and made through the Softconf website set up for this workshop (<a href="https://www.softconf.com/">https://www.softconf.com/TBD2021/TBD/</a>).
+</p>
+
+<p align="justify">
+In line with the ACL main conference policy, camera-ready versions of papers will be given one additional page of content.
+</p>
+
+<ul style="text-align: justify;">
+<li><b>Regular workshop papers</b>: Authors should submit a long paper of up to 8 pages, with unlimited pages for references (references only; appendix should be included in the main text and counted towards the page limit), or a short paper of up to 4 pages, with unlimited pages for references, following the ACL 2019 formatting requirements (see the ACL 2020 Call For Papers for reference: <a href="https://acl2020.org/calls/papers/">https://acl2020.org/calls/papers/</a>). The reported research should be substantially original. All submissions will be reviewed in a single track, regardless of length. Accepted papers will be presented as posters, and best papers may be given the opportunity for a brief talk to introduce their work. Reviewing will be double-blind, and thus no author information should be included in the papers; self-reference that identifies the authors should be avoided or anonymised. Accepted papers will appear in the workshop proceedings.</li>
+<li><b>Cross-submissions</b>: In addition to previously unpublished work, we also solicit papers on relevant topics that have appeared in a non-NLP venue (e.g., workshop or conference papers at NeurIPS/<wbr>ICML/<wbr>AAAI/<wbr>SIGKDD/<wbr>ICRA/<wbr>VLDB/<wbr>WWW/<wbr>SIGIR/<wbr>ISWC/<wbr>SIGCHI, among others). Accepted cross-submissions will be presented as posters, with an indication of original venue, but will not be included in the workshop proceedings. Cross-submissions are ideal for related work which would benefit from exposure to the NLI audience. Submission length is determined by the original venue. Interested authors should submit their papers in PDF format through the NLI Softconf website (<a href="https://www.softconf.com/acl2020/nli/">https://www.softconf.com/acl2020/nli/</a>), with a note on the original venue. Papers in this category do not need to follow the ACL format and selection will be solely determined by the organising committee.</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<!-- Important Dates Row -->
+<div class="w3-row-padding w3-padding-64" id="importantdates">
+
+<div class="w3-content">
+<h2>Important Dates</h2>
+</div>
+
+<div class="w3-content">
+  <div class="w3-container">
+    <p>
+      <ul style="text-align: justify; display: inline-block;">
+       <li><b>Workshop Paper Due Date:</b> MMMM DD, 2021 <br/></li>
+       <li><b>Notification of acceptance:</b> MMMM DD, 2021 <br/></li>
+       <li><b>Camera-ready papers due:</b> MMMM DD, 2021 <br/></li>
+        <li><b>Workshop date:</b> MMMM DD, 2021</li>
+      </ul>
+    </p>
+  </div>
+</div>
+
+</div>
+
+<!-- Keynote Speakers Container -->
+<div class="w3-container w3-padding-64 w3-center w3-theme-l1" id="keynotespeakers">
+<h2>Keynote Speakers</h2>
+
+<div>
+    <div class="w3-center">
+      <img src="images/joycechai.jpeg" style="width:15%" class="w3-circle w3-hover-opacity">
+      <a href="http://www.cse.msu.edu/~jchai/"><p><b>SPEAKER NAME</b></p></a>
+      <p>Affiliation</p>
+    </div>
+    <div class="w3-center">
+      <p align="justify">BIO</p>
+    </div>
+</div>
+<hr>
+<div>
+    <div class="w3-center">
+      <img src="images/joycechai.jpeg" style="width:15%" class="w3-circle w3-hover-opacity">
+      <a href="http://www.cse.msu.edu/~jchai/"><p><b>SPEAKER NAME</b></p></a>
+      <p>Affiliation</p>
+    </div>
+    <div class="w3-center">
+      <p align="justify">BIO</p>
+    </div>
+</div>
+<hr>
+<div>
+    <div class="w3-center">
+      <img src="images/joycechai.jpeg" style="width:15%" class="w3-circle w3-hover-opacity">
+      <a href="http://www.cse.msu.edu/~jchai/"><p><b>SPEAKER NAME</b></p></a>
+      <p>Affiliation</p>
+    </div>
+    <div class="w3-center">
+      <p align="justify">BIO</p>
+    </div>
+</div>
+<hr>
+<div>
+    <div class="w3-center">
+      <img src="images/joycechai.jpeg" style="width:15%" class="w3-circle w3-hover-opacity">
+      <a href="http://www.cse.msu.edu/~jchai/"><p><b>SPEAKER NAME</b></p></a>
+      <p>Affiliation</p>
+    </div>
+    <div class="w3-center">
+      <p align="justify">BIO</p>
+    </div>
+</div>
+<hr>
+<div>
+    <div class="w3-center">
+      <img src="images/joycechai.jpeg" style="width:15%" class="w3-circle w3-hover-opacity">
+      <a href="http://www.cse.msu.edu/~jchai/"><p><b>SPEAKER NAME</b></p></a>
+      <p>Affiliation</p>
+    </div>
+    <div class="w3-center">
+      <p align="justify">BIO</p>
+    </div>
+</div>
+<hr>
+<div>
+    <div class="w3-center">
+      <img src="images/joycechai.jpeg" style="width:15%" class="w3-circle w3-hover-opacity">
+      <a href="http://www.cse.msu.edu/~jchai/"><p><b>SPEAKER NAME</b></p></a>
+      <p>Affiliation</p>
+    </div>
+    <div class="w3-center">
+      <p align="justify">BIO</p>
+    </div>
+</div>
+<br/>
+<br/>
+</div>
+
+<!-- Accepter Papers Row -->
+<div class="w3-row-padding w3-padding-64" id="acceptedpapers">
+
+<div class="w3-content">
+<h2>Accepted Papers</h2>
+</div>
+
+<div class="w3-content">  
+  <div class="w3-container">
+    <h3>TBD</h3>
+  </div>
+</div>
+
+</div>
+
+
+<!-- Schedule -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1 w3-center" id="schedule">
+
+<div class="w3-content">
+<h2>Schedule</h2>
+<h3>TBD</h3>
+</div>
+
+</div>
+
+<!-- Program Committee -->
+<div class="w3-row-padding w3-padding-64 w3-center" id="pc">
+<div class="w3-content">
+<h2>Program Committee</h2>
+<ul align="justify">
+    <li> Miltos Allamanis (MSR, Cambridge)
+	<li> Uri Alon (Technion, Israel)
+	<li> Jonathan Berant (Tel Aviv University)
+	<li> Saikat Chakraborty (Columbia University)
+	<li> Xinyun Chen (UC Berkeley)
+	<li> Hanjun Dai (Google Brain)
+	<li> Xiang Deng (The Ohio State University)
+	<li> Elizabeth Dinella (Univ. of Pennsylvania)
+	<li> Li Dong (Microsoft Research Asia)
+	<li> Ahmed Elgohary (University of Maryland)
+	<li> Xiaodong Gu (HKUST)
+	<li> Vincent J. Hellendoorn (CMU)
+	<li> Julia Hockenmaier (UIUC)
+	<li> Toby Jia-Jun Li (CMU)
+	<li> Omer Levy (Tel Aviv University, Israel)
+	<li> Victoria Lin (Salesforce)
+	<li> Jian-Guang Lou (Microsoft Research Asia)
+	<li> Pengyu Nie (UT Austin)
+	<li> Sheena Panthaplackel (UT Austin)
+	<li> Ice Pasupat (Google AI; Stanford)
+	<li> Richard Shin (UC Berkeley)
+	<li> Alane Suhr (Cornell)
+	<li> Ronen Tamari (Hebrew university)
+	<li> Fangzheng (Frank) Xu (CMU)
+	<li> Tao Yu (Yale)
+	<li> Rui Zhang (Penn State)
+	<li> Ruiqi Zhong (UC Berkeley)
+	<li> Xi Ye (UT Austin)
+	<li> Kyle Richardson (AI2)
+	<li> Pengcheng Yin (CMU)
+</ul>
+</div>        
+</div>
+
+
+<!-- Organizers Container -->
+<div class="w3-container w3-padding-64 w3-theme-l1 w3-center" id="organizers">
+<h2>Organizers</h2>
+  <div class="column">
+      <img src="images/huansun2018-2.png" height=100 class="w3-circle w3-hover-opacity">
+      <a href="http://web.cse.ohio-state.edu/~yao.470/"><p><b>Ziyu Yao</b></p></a>
+      <p>The Ohio State University</p>
+  </div>
+  <div class="column">
+      <img src="images/huansun2018-2.png" height=100 class="w3-circle w3-hover-opacity">
+      <a href="https://www.cs.utexas.edu/~gdurrett/"><p><b>Greg Durrett</b></p></a>
+      <p>UT Austin</p>
+  </div>
+  <div class="column">
+      <img src="images/huansun2018-2.png" height=100 class="w3-circle w3-hover-opacity">
+      <a href="http://users.ece.utexas.edu/~gligoric/"><p><b>Milos Gligoric</b></p></a>
+      <p>UT Austin</p>
+  </div>
+  <div class="column">
+      <img src="images/huansun2018-2.png" height=100 class="w3-circle w3-hover-opacity">
+      <a href="https://jjessyli.github.io"><p><b>Junyi Jessy Li</b></p></a>
+      <p>UT Austin</p>
+  </div>
+  <div class="column">
+      <img src="images/huansun2018-2.png" height=100 class="w3-circle w3-hover-opacity">
+      <a href="https://www.cs.utexas.edu/~mooney/"><p><b>Ray Mooney</b></p></a>
+      <p>UT Austin</p>
+  </div>
+  <div class="column">
+      <img src="images/huansun2018-2.png" height=100 class="w3-circle w3-hover-opacity">
+      <a href="http://www.phontron.com/"><p><b>Graham Neubig</b></p></a>
+      <p>Carnegie Mellon University</p>
+  <div class="column">
+      <img src="images/yusu.jpg" height=100 class="w3-circle w3-hover-opacity">
+      <a href="https://ysu1989.github.io"><p><b>Yu Su</b></p></a>
+      <p>The Ohio State University</p>
+  </div>
+</div>
+   <div class="column">
+      <img src="images/huansun2018-2.png" height=100 class="w3-circle w3-hover-opacity">
+      <a href="http://web.cse.ohio-state.edu/~sun.397/"><p><b>Huan Sun</b></p></a>
+      <p>The Ohio State University</p>
+  </div>
+  <div class="column">
+      <img src="images/yusu.jpg" height=100 class="w3-circle w3-hover-opacity">
+      <a href="https://nlp.biu.ac.il/~rtsarfaty/onlp"><p><b>Reut Tsarfaty</b></p></a>
+      <p>Bar-Ilan University</p>
+  </div>
+  
+  
+</div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <!--Was 100px -->
+  <div style="position:relative;bottom:20px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

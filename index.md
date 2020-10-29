@@ -1,3 +1,3 @@
 ---
-redirect_to: /2021/index.html
+redirect_to: https://nlp4prog.github.io/2021/
 ---
